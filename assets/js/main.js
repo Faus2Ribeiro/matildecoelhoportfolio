@@ -8,6 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
+		$intro = $('#intro'),
 		$sidebar = $('#sidebar');
 
 	// Breakpoints.
@@ -130,7 +131,7 @@
 		});
 
 
-			// slider.
+			// slider menu stolen from spectral
 				$('#slider')
 					.append('<a href="#slider" class="close"></a>')
 					.appendTo($body)
@@ -140,11 +141,25 @@
 						hideOnSwipe: true,
 						resetScroll: true,
 						resetForms: true,
-						side: 'right',
+						side: 'left',
 						target: $body,
 						visibleClass: 'is-slider-visible'
 					});
 
+					// Header.
+						if ($intro.length > 0
+						&&	$header.hasClass('alt')) {
+
+							$window.on('resize', function() { $window.trigger('scroll'); });
+
+							$intro.scrollex({
+								bottom:		$header.outerHeight() + 1,
+								terminate:	function() { $header.removeClass('alt'); },
+								enter:		function() { $header.addClass('alt'); },
+								leave:		function() { $header.removeClass('alt'); }
+							});
+
+						}
 
 	// Spotlights.
 		$('.spotlights > section')
