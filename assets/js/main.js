@@ -129,6 +129,23 @@
 			}
 		});
 
+
+			// slider.
+				$('#slider')
+					.append('<a href="#slider" class="close"></a>')
+					.appendTo($body)
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'right',
+						target: $body,
+						visibleClass: 'is-slider-visible'
+					});
+
+
 	// Spotlights.
 		$('.spotlights > section')
 			.scrollex({
