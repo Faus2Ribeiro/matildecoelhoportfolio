@@ -2610,7 +2610,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 			width: 100%;
 		}
 
@@ -3024,7 +3024,7 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 900px;
+
 		}
 
 			.spotlights > section > .image img {
@@ -3049,7 +3049,7 @@ input, select, textarea {
 			}
 
 		.spotlights > section > .content {
-			padding: 4em 5em 2em 5em ;
+			padding: 4em 5em 2em 4em ;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3465,7 +3465,7 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			text-align: right;
+			text-align: left;
 		}
 
 			#header > nav > ul {
@@ -3509,13 +3509,13 @@ input, select, textarea {
 
 							#header nav > ul > li > a.sliderToggle:after {
 								background-image: url("images/bars.svg");
-								background-position: right center;
+								background-position: center;
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
 								height: 50px;
 								vertical-align: top;
-								width: 40px;
+								width: 50px;
 							}
 
 							@media screen and (max-width: 736px) {
