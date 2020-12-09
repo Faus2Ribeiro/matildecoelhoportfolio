@@ -2460,7 +2460,7 @@ input, select, textarea {
 					-ms-transition: border-color 0.2s ease;
 					transition: border-color 0.2s ease;
 					background-color: rgb(29 36 42);
-					border: solid 1px !important;
+					border: solid 1.5px !important;
 					border-color: #232323 !important;
 					border-radius: 3em;
 					color: #fff !important;
@@ -2573,7 +2573,7 @@ input, select, textarea {
 					input[type="button"]:hover,
 					button:hover,
 					.button:hover {
-						border-color: rgba(255, 255, 255, 0.55) !important;
+						border-color: rgb(255, 255, 255, 0) !important;
 					}
 
 						input[type="submit"]:hover:after,
@@ -2619,12 +2619,12 @@ input, select, textarea {
 								width: 2em;
 							}
 
-							/* Button */
+							/* Buttonaboutme */
 
 								input[type="submit"],
 								input[type="reset"],
 								input[type="buttonaboutme"],
-								buttonaboutme,
+								button,
 								.buttonaboutme {
 									-moz-appearance: none;
 									-webkit-appearance: none;
@@ -2658,7 +2658,7 @@ input, select, textarea {
 									input[type="submit"]:after,
 									input[type="reset"]:after,
 									input[type="buttonaboutme"]:after,
-									buttonaboutme:after,
+									button:after,
 									.buttonaboutme:after {
 										-moz-transform: scale(0.25);
 										-webkit-transform: scale(0.25);
@@ -2683,7 +2683,7 @@ input, select, textarea {
 									input[type="submit"].icon:before,
 									input[type="reset"].icon:before,
 									input[type="buttonaboutme"].icon:before,
-									buttonaboutme.icon:before,
+									button.icon:before,
 									.buttonaboutme.icon:before {
 										margin-right: 0.75em;
 									}
@@ -2691,7 +2691,7 @@ input, select, textarea {
 									input[type="submit"].fit,
 									input[type="reset"].fit,
 									input[type="buttonaboutme"].fit,
-									buttonaboutme.fit,
+									button.fit,
 									.buttonaboutme.fit {
 										width: 100%;
 									}
@@ -2699,7 +2699,7 @@ input, select, textarea {
 									input[type="submit"].small,
 									input[type="reset"].small,
 									input[type="buttonaboutme"].small,
-									buttonaboutme.small,
+									button.small,
 									.buttonaboutme.small {
 										font-size: 0.4em;
 									}
@@ -2707,7 +2707,7 @@ input, select, textarea {
 									input[type="submit"].large,
 									input[type="reset"].large,
 									input[type="buttonaboutme"].large,
-									buttonaboutme.large,
+									button.large,
 									.buttonaboutme.large {
 										font-size: 0.8em;
 									}
@@ -2715,7 +2715,7 @@ input, select, textarea {
 									input[type="submit"].primary,
 									input[type="reset"].primary,
 									input[type="buttonaboutme"].primary,
-									buttonaboutme.primary,
+									button.primary,
 									.buttonaboutme.primary {
 										background-color: #ffffff;
 										color: #312450 !important;
@@ -2734,8 +2734,8 @@ input, select, textarea {
 									input[type="reset"]:disabled,
 									input[type="buttonaboutme"].disabled,
 									input[type="buttonaboutme"]:disabled,
-									buttonaboutme.disabled,
-									buttonaboutme:disabled,
+									button.disabled,
+									button:disabled,
 									.buttonaboutme.disabled,
 									.buttonaboutme:disabled {
 										cursor: default;
@@ -2746,15 +2746,17 @@ input, select, textarea {
 									input[type="submit"]:hover,
 									input[type="reset"]:hover,
 									input[type="buttonaboutme"]:hover,
-									buttonaboutme:hover,
+									button:hover,
 									.buttonaboutme:hover {
-										border-color: rgba(255, 255, 255, 0.55) !important;
+
+										background-color: #f4f4f4;
+										border-color: #232323 !important;
 									}
 
 										input[type="submit"]:hover:after,
 										input[type="reset"]:hover:after,
 										input[type="buttonaboutme"]:hover:after,
-										buttonaboutme:hover:after,
+										button:hover:after,
 										.buttonaboutme:hover:after {
 											opacity: 0.05;
 											-moz-transform: scale(1);
@@ -2793,6 +2795,181 @@ input, select, textarea {
 												position: absolute;
 												width: 2em;
 											}
+
+											/* buttonpairsection */
+
+												input[type="submit"],
+
+												input[type="buttonpairsection"],
+												button,
+												.buttonpairsection {
+													-moz-appearance: none;
+													-webkit-appearance: none;
+													-ms-appearance: none;
+													appearance: none;
+													-moz-transition: border-color 0.2s ease;
+													-webkit-transition: border-color 0.2s ease;
+													-ms-transition: border-color 0.2s ease;
+													transition: border-color 0.2s ease;
+													background-color: rgba(41 47 53, 1);
+													border: solid 1.5px !important;
+													border-color: #fff !important;
+													border-radius: 3em;
+													color: #fff !important;
+													cursor: pointer;
+													display: inline-block;
+													font-size: 0.6em;
+													font-weight: bold;
+													height: calc(4.75em + 2px);
+													letter-spacing: 0.25em;
+													line-height: 4.75em;
+													outline: 0;
+													padding: 0 3.75em;
+													position: relative;
+													text-align: center;
+													text-decoration: none;
+													text-transform: uppercase;
+													white-space: nowrap;
+												}
+
+													input[type="submit"]:after,
+													input[type="reset"]:after,
+													input[type="buttonpairsection"]:after,
+													button:after,
+													.buttonpairsection:after {
+														-moz-transform: scale(0.25);
+														-webkit-transform: scale(0.25);
+														-ms-transform: scale(0.25);
+														transform: scale(0.25);
+														pointer-events: none;
+														-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+														-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+														-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+														transition: opacity 0.2s ease, transform 0.2s ease;
+														background: #ffffff;
+														border-radius: 3em;
+														content: '';
+														height: 100%;
+														left: 0;
+														opacity: 0;
+														position: absolute;
+														top: 0;
+														width: 100%;
+													}
+
+													input[type="submit"].icon:before,
+													input[type="reset"].icon:before,
+													input[type="buttonpairsection"].icon:before,
+													button.icon:before,
+													.buttonpairsection.icon:before {
+														margin-right: 0.75em;
+													}
+
+													input[type="submit"].fit,
+													input[type="reset"].fit,
+													input[type="buttonpairsection"].fit,
+													button.fit,
+													.buttonpairsection.fit {
+														width: 100%;
+													}
+
+													input[type="submit"].small,
+													input[type="reset"].small,
+													input[type="buttonpairsection"].small,
+													button.small,
+													.buttonpairsection.small {
+														font-size: 0.4em;
+													}
+
+													input[type="submit"].large,
+													input[type="reset"].large,
+													input[type="buttonpairsection"].large,
+													button.large,
+													.buttonpairsection.large {
+														font-size: 0.8em;
+													}
+
+													input[type="submit"].primary,
+													input[type="reset"].primary,
+													input[type="buttonpairsection"].primary,
+													button.primary,
+													.buttonpairsection.primary {
+														background-color: #ffffff;
+														color: #312450 !important;
+													}
+
+														input[type="submit"].primary:after,
+														input[type="reset"].primary:after,
+														input[type="buttonpairsection"].primary:after,
+														button.primary:after,
+														.buttonpairsection.primary:after {
+															display: none;
+														}
+
+													input[type="submit"].disabled, input[type="submit"]:disabled,
+													input[type="reset"].disabled,
+													input[type="reset"]:disabled,
+													input[type="buttonpairsection"].disabled,
+													input[type="buttonpairsection"]:disabled,
+													button.disabled,
+													button:disabled,
+													.buttonpairsection.disabled,
+													.buttonpairsection:disabled {
+														cursor: default;
+														opacity: 0.5;
+														pointer-events: none;
+													}
+
+													input[type="submit"]:hover,
+													input[type="reset"]:hover,
+													input[type="buttonpairsection"]:hover,
+													button:hover,
+													.buttonpairsection:hover {
+														border-color: rgb(255, 255, 255, 0) !important;
+													}
+
+														input[type="submit"]:hover:after,
+														input[type="reset"]:hover:after,
+														input[type="buttonpairsection"]:hover:after,
+														button:hover:after,
+														.buttonpairsection:hover:after {
+															opacity: 0.05;
+															-moz-transform: scale(1);
+															-webkit-transform: scale(1);
+															-ms-transform: scale(1);
+															transform: scale(1);
+														}
+
+														input[type="submit"]:hover:active,
+														input[type="reset"]:hover:active,
+														input[type="buttonpairsection"]:hover:active,
+														button:hover:active,
+														.buttonpairsection:hover:active {
+															border-color: #ffffff !important;
+														}
+
+															input[type="submit"]:hover:active:after,
+															input[type="reset"]:hover:active:after,
+															input[type="buttonpairsection"]:hover:active:after,
+															button:hover:active:after,
+															.buttonpairsection:hover:active:after {
+																opacity: 0.1;
+															}
+
+															.more:after {
+																background-image: url("images/arrow.svg");
+																background-position: center;
+																background-repeat: no-repeat;
+																background-size: contain;
+																bottom: 5em;
+																content: '';
+																display: block;
+																height: 1.5em;
+																left: 50%;
+																margin: 0em 0em -10em 0em;
+																position: absolute;
+																width: 2em;
+															}
 
 /* Features */
 
@@ -2963,19 +3140,19 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgb(29 36 42);
+			background-color: rgb(29, 36, 42);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgb(29 36 42);
+			background-color: rgba(29, 36, 42, 0.95);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgb(29 36 42);
+			background-color: rgb(29, 36, 42);
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgb(29 36 42);
+			background-color:  rgba(29, 36, 42, 0.95);
 		}
 
 		.spotlight:nth-child(5) {
@@ -3207,7 +3384,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="button"],
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
-				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+				box-shadow: inset 0 0 0 2px #ff0000;
 				color: #ffffff;
 			}
 
@@ -3265,7 +3442,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 code {
-				background: rgba(255, 255, 255, 0.075);
+				background: #ff0000;
 			}
 
 			.wrapper.style3 header p {
@@ -3374,7 +3551,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="button"],
 			.wrapper.style3 button,
 			.wrapper.style3 .button {
-				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+				box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0);
 				color: #ffffff;
 			}
 
