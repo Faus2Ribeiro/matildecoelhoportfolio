@@ -222,6 +222,11 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+h1 {
+	font-size: 0.8em;
+	line-height: 1.75em;
+}
+
 	h2 {
 		font-size: 1.35em;
 		line-height: 1.75em;
@@ -2332,7 +2337,14 @@ input, select, textarea {
 					ul.actions:not(.fixed) li .button {
 						width: 100%;
 					}
-
+					ul.actions:not(.fixed) li input[type="submit"],
+					ul.actions:not(.fixed) li input[type="reset"],
+					ul.actions:not(.fixed) li input[type="button"],
+					ul.actions:not(.fixed) li button,
+					ul.actions:not(.fixed) li .button {
+						width: 100%;
+						margin-right: -0.5em;
+					}
 						ul.actions:not(.fixed) li input[type="submit"].icon:before,
 						ul.actions:not(.fixed) li input[type="reset"].icon:before,
 						ul.actions:not(.fixed) li input[type="button"].icon:before,
@@ -2505,37 +2517,6 @@ input, select, textarea {
 						width: 100%;
 					}
 
-					input[type="submit"].icon:before,
-					input[type="reset"].icon:before,
-					input[type="button"].icon:before,
-					button.icon:before,
-					.button.icon:before {
-						margin-right: 0.75em;
-					}
-
-					input[type="submit"].fit,
-					input[type="reset"].fit,
-					input[type="button"].fit,
-					button.fit,
-					.button.fit {
-						width: 100%;
-					}
-
-					input[type="submit"].small,
-					input[type="reset"].small,
-					input[type="button"].small,
-					button.small,
-					.button.small {
-						font-size: 0.4em;
-					}
-
-					input[type="submit"].large,
-					input[type="reset"].large,
-					input[type="button"].large,
-					button.large,
-					.button.large {
-						font-size: 0.8em;
-					}
 
 					input[type="submit"].primary,
 					input[type="reset"].primary,
@@ -2546,27 +2527,6 @@ input, select, textarea {
 						color: #312450 !important;
 					}
 
-						input[type="submit"].primary:after,
-						input[type="reset"].primary:after,
-						input[type="button"].primary:after,
-						button.primary:after,
-						.button.primary:after {
-							display: none;
-						}
-
-					input[type="submit"].disabled, input[type="submit"]:disabled,
-					input[type="reset"].disabled,
-					input[type="reset"]:disabled,
-					input[type="button"].disabled,
-					input[type="button"]:disabled,
-					button.disabled,
-					button:disabled,
-					.button.disabled,
-					.button:disabled {
-						cursor: default;
-						opacity: 0.5;
-						pointer-events: none;
-					}
 
 					input[type="submit"]:hover,
 					input[type="reset"]:hover,
@@ -2680,39 +2640,7 @@ input, select, textarea {
 										width: 100%;
 									}
 
-									input[type="submit"].icon:before,
-									input[type="reset"].icon:before,
-									input[type="buttonaboutme"].icon:before,
-									button.icon:before,
-									.buttonaboutme.icon:before {
-										margin-right: 0.75em;
-									}
-
-									input[type="submit"].fit,
-									input[type="reset"].fit,
-									input[type="buttonaboutme"].fit,
-									button.fit,
-									.buttonaboutme.fit {
-										width: 100%;
-									}
-
-									input[type="submit"].small,
-									input[type="reset"].small,
-									input[type="buttonaboutme"].small,
-									button.small,
-									.buttonaboutme.small {
-										font-size: 0.4em;
-									}
-
-									input[type="submit"].large,
-									input[type="reset"].large,
-									input[type="buttonaboutme"].large,
-									button.large,
-									.buttonaboutme.large {
-										font-size: 0.8em;
-									}
-
-									input[type="submit"].primary,
+								input[type="submit"].primary,
 									input[type="reset"].primary,
 									input[type="buttonaboutme"].primary,
 									button.primary,
@@ -2724,24 +2652,9 @@ input, select, textarea {
 										input[type="submit"].primary:after,
 										input[type="reset"].primary:after,
 										input[type="buttonaboutme"].primary:after,
-										buttonaboutme.primary:after,
 										.buttonaboutme.primary:after {
 											display: none;
 										}
-
-									input[type="submit"].disabled, input[type="submit"]:disabled,
-									input[type="reset"].disabled,
-									input[type="reset"]:disabled,
-									input[type="buttonaboutme"].disabled,
-									input[type="buttonaboutme"]:disabled,
-									button.disabled,
-									button:disabled,
-									.buttonaboutme.disabled,
-									.buttonaboutme:disabled {
-										cursor: default;
-										opacity: 0.5;
-										pointer-events: none;
-									}
 
 									input[type="submit"]:hover,
 									input[type="reset"]:hover,
@@ -2781,20 +2694,7 @@ input, select, textarea {
 												opacity: 0.1;
 											}
 
-											.more:after {
-												background-image: url("images/arrow.svg");
-												background-position: center;
-												background-repeat: no-repeat;
-												background-size: contain;
-												bottom: 5em;
-												content: '';
-												display: block;
-												height: 1.5em;
-												left: 50%;
-												margin: 0em 0em -10em 0em;
-												position: absolute;
-												width: 2em;
-											}
+
 
 											/* buttonpairsection */
 
@@ -2989,20 +2889,8 @@ input, select, textarea {
 																opacity: 0.1;
 															}
 
-															.more:after {
-																background-image: url("images/arrow.svg");
-																background-position: center;
-																background-repeat: no-repeat;
-																background-size: contain;
-																bottom: 5em;
-																content: '';
-																display: block;
-																height: 1.5em;
-																left: 50%;
-																margin: 0em 0em -10em 0em;
-																position: absolute;
-																width: 2em;
-															}
+
+
 
 /* Features */
 
@@ -4050,6 +3938,17 @@ input, select, textarea {
 
 		}
 
+		.wrapper.style7 {
+			background-color: rgb(255 255 255 / 0%);
+			box-shadow:0px 0px 7px 0px #00000038;
+			text-shadow: 0px 0 10px #000000ad;
+		}
+
+		.wrapper.style8 {
+			text-shadow: 0px 0 10px #000000ad;
+			padding: 0;
+		}
+
 
 
 /* Page Wrapper + Menu */
@@ -4196,10 +4095,11 @@ input, select, textarea {
 
 
 	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		-moz-transition: background-color 0.2s ease;
+		-webkit-transition: background-color 0.2s ease;
+		-ms-transition: background-color 0.2s ease;
+		transition: background-color 0.2s ease;
+
 		background: transparent;
 		height: 3em;
 		left: 0;
@@ -4210,26 +4110,47 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+	#header h1 {
+		-moz-transition: opacity 0.2s ease;
+		-webkit-transition: opacity 0.2s ease;
+		-ms-transition: opacity 0.2s ease;
+		transition: opacity 0.2s ease;
+		height: inherit;
+		right: 1.25em;
+		line-height: inherit;
+		position: absolute;
+		top: 0;
+	}
 
-		#header > .title {
+		#header h1 a {
 			border: 0;
-			color: #ffffff;
 			display: block;
-			font-size: 1.25em;
-			font-weight: bold;
+			height: inherit;
+			line-height: inherit;
+		}
+		@media screen and (max-width: 736px) {
+
+			#header h1 a {
+				font-size: 0.8em;
+			}
+
 		}
 
-		#header > nav {
-			-moz-flex: 1;
-			-webkit-flex: 1;
-			-ms-flex: 1;
-			flex: 1;
-			text-align: left;
+		#header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			left: 0;
+			top: 0;
+
 		}
+
 
 			#header > nav > ul {
+				list-style: none;
 				margin: 0;
 				padding: 0;
+				white-space: nowrap;
 			}
 
 				#header > nav > ul > li {
@@ -4237,6 +4158,7 @@ input, select, textarea {
 					margin-left: 1.75em;
 					padding: 0;
 					vertical-align: middle;
+
 				}
 
 					#header > nav > ul > li:first-child {
@@ -4251,6 +4173,7 @@ input, select, textarea {
 						font-weight: bold;
 						letter-spacing: 0.25em;
 						text-transform: uppercase;
+
 					}
 
 
@@ -4270,15 +4193,18 @@ input, select, textarea {
 
 							#header nav > ul > li > a.menuToggle:after {
 								background-image: url("images/bars.svg");
-			
-								background-position:center;
+
+								background-position: center;
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height:  6.5em;
+								height: 4.5em;
 								vertical-align: top;
-								width: 6.5em;
+								width: 4em;
+								filter: drop-shadow(0px 0px 5px black);
+
 							}
+
 
 							@media screen and (max-width: 736px) {
 
@@ -4305,13 +4231,15 @@ input, select, textarea {
 					}
 
 		#header.alt {
-			background: transparent;
+			background:transparent;
 		}
 
 			#header.alt h1 {
 				pointer-events: none;
-				opacity: 0;
+				opacity: 1;
 			}
+
+
 
 /* Banner */
 
@@ -4502,66 +4430,6 @@ input, select, textarea {
 	body.is-preload #banner:after {
 		opacity: 1;
 	}
-
-/* CTA */
-
-	#cta .inner {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		max-width: 45em;
-	}
-
-		#cta .inner header {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			padding-right: 3em;
-			width: 70%;
-		}
-
-			#cta .inner header p {
-				color: inherit;
-			}
-
-		#cta .inner .actions {
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			width: 30%;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#cta .inner {
-				display: block;
-				text-align: center;
-			}
-
-				#cta .inner header {
-					padding-right: 0;
-					width: 100%;
-				}
-
-				#cta .inner .actions {
-					margin-left: auto;
-					margin-right: auto;
-					max-width: 20em;
-					width: 100%;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#cta .inner .actions {
-				max-width: none;
-			}
-
-		}
 
 /* Main */
 
@@ -5067,4 +4935,186 @@ input, select, textarea {
 
 						ul.contact > li:first-child {
 							margin-top: 0;
+						}
+
+
+						/* buttonpt */
+						/*TEXTO QUE ESTÁ DENTRO DO BOTÃO*/
+
+						.buttonpt {
+								-moz-appearance: none;
+								-webkit-appearance: none;
+								-ms-appearance: none;
+								appearance: none;
+								-moz-transition: border-color 0.2s ease;
+								-webkit-transition: border-color 0.2s ease;
+								-ms-transition: border-color 0.2s ease;
+								transition: border-color 0.2s ease;
+								background-color: rgb(0 0 0 / 10%);
+								border: solid 1px !important;
+								border-color: #fff !important;
+								border-radius: 3em;
+								color: #fff !important;
+								cursor: pointer;
+								display: inline-block;
+								font-size: 0.6em;
+								font-weight: bold;
+								height: calc(4.75em + 2px);
+								letter-spacing: 0.25em;
+								line-height: 4.75em;
+								outline: 0;
+								padding: 0 2.75em;
+								position: relative;
+								text-align: center;
+								text-decoration: none;
+								text-transform: uppercase;
+								white-space: nowrap;
+
+
+
+							}
+
+/*EFEITOS*/
+								.buttonpt:after {
+									-moz-transform: scale(0.25);
+									-webkit-transform: scale(0.25);
+									-ms-transform: scale(0.25);
+									transform: scale(0.25);
+									pointer-events: none;
+									-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+									-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+									-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+									transition: opacity 0.2s ease, transform 0.2s ease;
+									background: #ffffff;
+									border-radius: 3em;
+									content: '';
+									height: 100%;
+									right: 0;
+									opacity: 0;
+									position: absolute;
+									top: 0;
+									width: 100%;
+
+								}
+
+
+								button:hover,
+								.buttonpt:hover {
+									border-color: rgb(255, 255, 255) !important;
+								}
+
+
+									button:hover:after,
+									.buttonpt:hover:after {
+										opacity: 0.05;
+										-moz-transform: scale(1);
+										-webkit-transform: scale(1);
+										-ms-transform: scale(1);
+										transform: scale(1);
+									}
+
+
+									button:hover:active,
+									.buttonpt:hover:active {
+										border-color: #ffffff !important;
+									}
+
+
+										button:hover:active:after,
+										.buttonpt:hover:active:after {
+											opacity: 0.1;
+										}
+
+
+										/* buttonen */
+										/*TEXTO QUE ESTÁ DENTRO DO BOTÃO*/
+
+										.buttonen {
+												-moz-appearance: none;
+												-webkit-appearance: none;
+												-ms-appearance: none;
+												appearance: none;
+												-moz-transition: border-color 0.2s ease;
+												-webkit-transition: border-color 0.2s ease;
+												-ms-transition: border-color 0.2s ease;
+												transition: border-color 0.2s ease;
+												background-color: rgb(0 0 0 / 10%);
+												border: solid 1px !important;
+												border-color: #fff !important;
+												border-radius: 3em;
+												color: #fff !important;
+												cursor: pointer;
+												display: inline-block;
+												font-size: 0.6em;
+												font-weight: bold;
+												height: calc(4.75em + 2px);
+												letter-spacing: 0.25em;
+												line-height: 4.75em;
+												outline: 0;
+												padding: 0 4em;
+												position: relative;
+												text-align: center;
+												text-decoration: none;
+												text-transform: uppercase;
+												white-space: nowrap;
+
+
+
+											}
+
+						/*EFEITOS*/
+												.buttonen:after {
+													-moz-transform: scale(0.25);
+													-webkit-transform: scale(0.25);
+													-ms-transform: scale(0.25);
+													transform: scale(0.25);
+													pointer-events: none;
+													-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+													-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+													-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+													transition: opacity 0.2s ease, transform 0.2s ease;
+													background: #ffffff;
+													border-radius: 3em;
+													content: '';
+													height: 100%;
+													right: 0;
+													opacity: 0;
+													position: absolute;
+													top: 0;
+													width: 100%;
+
+												}
+
+
+												button:hover,
+												.buttonen:hover {
+													border-color: rgb(255, 255, 255) !important;
+												}
+
+
+													button:hover:after,
+													.buttonen:hover:after {
+														opacity: 0.05;
+														-moz-transform: scale(1);
+														-webkit-transform: scale(1);
+														-ms-transform: scale(1);
+														transform: scale(1);
+													}
+
+
+													button:hover:active,
+													.buttonen:hover:active {
+														border-color: #ffffff !important;
+													}
+
+
+														button:hover:active:after,
+														.buttonen:hover:active:after {
+															opacity: 0.1;
+														}
+
+
+						div.right {
+  					position: absolute;
+  					right: 0.5em;
 						}
