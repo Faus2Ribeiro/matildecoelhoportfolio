@@ -421,7 +421,7 @@ h1 {
 		}
 
 		.row > .col-6 {
-			width: 50%;
+			width: 40%;
 		}
 
 		.row > .off-6 {
@@ -793,7 +793,7 @@ h1 {
 				}
 
 					.row.gtr-150 > * {
-						padding: 0 0 0 2.25em;
+						padding: 0.5em 0.5em 0.5em 0.5em;
 					}
 
 					.row.gtr-150.gtr-uniform {
@@ -5119,3 +5119,64 @@ h1 {
   					position: absolute;
   					right: 0.5em;
 						}
+
+						img:hover{
+
+							opacity: .8;
+						}
+
+@media screen and (max-width: 1680px){
+
+	.row > .col-3{
+		width: 33.3%;
+	}
+
+	.row > .col-6 {
+		width: 65.5%;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
+	.row > .col-3{
+		width: 33.3%;
+	}
+
+	.row > .col-6 {
+		width: 63.7%;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+	.row > .col-3{
+		width: 33.3%;
+	}
+
+	.row > .col-6 {
+		width: 63.7%;
+	}
+
+}
+
+@media screen and (max-width: 736px){
+	.row > .col-3{
+		width: 50%;
+	}
+
+	.row > .col-6 {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+	.row > .col-3{
+		width: 100%;
+	}
+
+	.row > .col-6 {
+		width: 100%;
+	}
+
+}
