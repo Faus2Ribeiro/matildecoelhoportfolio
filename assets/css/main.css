@@ -176,7 +176,7 @@ input, select, textarea {
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
 
 		color: inherit;
-		text-decoration: none;
+		text-decoration: underline #232323;
 	}
 
 		a:hover {
@@ -198,6 +198,8 @@ input, select, textarea {
 
 
 	}
+
+
 
 	h1, h3, h4, h5, h6 {
 		color: #fff;
@@ -237,6 +239,7 @@ h1 {
 			h2 {
 				font-size: 1.1em;
 				line-height: 1.65em;
+				text-align: center;
 			}
 
 		}
@@ -421,7 +424,7 @@ h1 {
 		}
 
 		.row > .col-6 {
-			width: 40%;
+			width: 50%;
 		}
 
 		.row > .off-6 {
@@ -550,7 +553,7 @@ h1 {
 		}
 
 			.row.gtr-150 > * {
-				padding: 0 0 0 2.25em;
+				padding: 0 0 0 2.5em;
 			}
 
 			.row.gtr-150.gtr-uniform {
@@ -2176,6 +2179,35 @@ h1 {
 				width: 100%;
 			}
 
+			@media screen and (max-width: 980px) {
+				.image.left, .image.right {
+				width: 50%;
+					margin: 0 1em 2em 1em;
+
+				}
+
+			}
+
+			@media screen and (max-width: 728px) {
+
+				.image.left, .image.right {
+				width: 40%;
+					margin: 0 1em 2em 1em;
+
+				}
+
+			}
+
+			@media screen and (max-width: 480px) {
+
+				.image.left, .image.right {
+				width: 100%;
+					margin: 0 0 1em 0;
+
+				}
+
+			}
+
 		.image.fit {
 			display: block;
 			margin: 0 2em 0em 0;
@@ -2330,7 +2362,64 @@ h1 {
 						font-size: 1.5em;
 					}
 
+@media screen and (max-width: 980px) {
+	ul.actions:not(.fixed) {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-left: 0;
+		width: 100% !important;
+	}
 
+		ul.actions:not(.fixed) li {
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			padding: 0 0 0 0;
+			text-align: center;
+			width: 100%;
+		}
+						ul.actions:not(.fixed) li > * {
+							width: 100%;
+						}
+						ul.actions:not(.fixed) li > * {
+							width: 100%;
+						}
+
+						ul.actions:not(.fixed) li:first-child {
+							padding-top: 0;
+						}
+
+						ul.actions:not(.fixed) li input[type="submit"],
+						ul.actions:not(.fixed) li input[type="reset"],
+						ul.actions:not(.fixed) li input[type="button"],
+						ul.actions:not(.fixed) li button,
+						ul.actions:not(.fixed) li .button {
+							width: 100%;
+						}
+						ul.actions:not(.fixed) li input[type="submit"],
+						ul.actions:not(.fixed) li input[type="reset"],
+						ul.actions:not(.fixed) li input[type="button"],
+						ul.actions:not(.fixed) li button,
+						ul.actions:not(.fixed) li .button {
+							width: 100%;
+							margin-right: -0.5em;
+						}
+							ul.actions:not(.fixed) li input[type="submit"].icon:before,
+							ul.actions:not(.fixed) li input[type="reset"].icon:before,
+							ul.actions:not(.fixed) li input[type="button"].icon:before,
+							ul.actions:not(.fixed) li button.icon:before,
+							ul.actions:not(.fixed) li .button.icon:before {
+								margin-left: -0.5em;
+							}
+
+}
 		@media screen and (max-width: 480px) {
 
 			ul.actions:not(.fixed) {
@@ -4541,12 +4630,12 @@ h1 {
 
 		#genericmain1 > header {
 			padding: 12em 0 10em 0 ;
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/pic01.jpg");
-			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/pic01.jpg");
-			background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/pic01.jpg");
-			background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/pic01.jpg");
+			background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover1.jpg");
+			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover1.jpg");
+			background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover1.jpg");
+			background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover1.jpg");
 			background-attachment: fixed;
-			background-position: center center;
+
 			background-repeat: no-repeat;
 			background-size: cover;
 			text-align: center;
@@ -4614,12 +4703,12 @@ h1 {
 
 			#genericmain2 > header {
 				padding: 12em 0 10em 0 ;
-				background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
-				background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
-				background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
-				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
+				background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+				background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+				background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+				background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
 				background-attachment: fixed;
-				background-position: center center;
+				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				text-align: center;
@@ -4628,6 +4717,8 @@ h1 {
 				#genericmain2 > header h2 {
 					font-size: 1.75em;
 					margin: 0 0 0.5em 0;
+					color: #fff;
+
 				}
 
 				#genericmain2 > header p {
@@ -4644,15 +4735,31 @@ h1 {
 				@media screen and (max-width: 1680px) {
 
 					#genericmain2 > header {
-						padding: 10em 0 8em 0 ;
+						padding: 10em 0 8em 0 ;;
+						background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2_2.jpg");
+						background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2_2.jpg");
+						background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2_2.jpg");
+						background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2_2.jpg");
+						background-attachment: fixed;
+						background-repeat: no-repeat;
+						background-size: cover;
+						text-align: center;
 					}
 
-				}
+			}
 
 				@media screen and (max-width: 1280px) {
 
 					#genericmain2 > header {
 						padding: 8em 3em 6em 3em ;
+						background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-attachment: fixed;
+						background-repeat: no-repeat;
+						background-size: cover;
+						text-align: center;
 					}
 
 				}
@@ -4661,6 +4768,14 @@ h1 {
 
 					#genericmain2 > header {
 						padding: 10em 3em 8em 3em ;
+						background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+						background-attachment: fixed;
+						background-repeat: no-repeat;
+						background-size: cover;
+						text-align: center;
 					}
 
 				}
@@ -4668,8 +4783,16 @@ h1 {
 				@media screen and (max-width: 736px) {
 
 					#genericmain2 > header {
-						padding: 5em 3em 3em 3em ;
-					}
+							padding: 5em 3em 3em 3em ;
+							background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+							background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+							background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+							background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover2.jpg");
+							background-attachment: fixed;
+							background-repeat: no-repeat;
+							background-size: cover;
+							text-align: center;
+						}
 
 						#genericmain2 > header h2 {
 							font-size: 1.25em;
@@ -4686,12 +4809,11 @@ h1 {
 
 				#genericmain3 > header {
 					padding: 12em 0 10em 0 ;
-					background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
-					background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
-					background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
-					background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/background2.jpg");
+					background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover3.jpg");
+					background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover3.jpg");
+					background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover3.jpg");
+					background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/cover3.jpg");
 					background-attachment: fixed;
-					background-position: center center;
 					background-repeat: no-repeat;
 					background-size: cover;
 					text-align: center;
@@ -4700,6 +4822,8 @@ h1 {
 					#genericmain3 > header h2 {
 						font-size: 1.75em;
 						margin: 0 0 0.5em 0;
+						color: #fff;
+
 					}
 
 					#genericmain3 > header p {
@@ -4753,6 +4877,80 @@ h1 {
 				body.is-mobile #genericmain3 > header {
 					background-attachment: scroll;
 				}
+
+				/* GenericMain3 */
+
+					#genericmain4 > header {
+						padding: 12em 0 10em 0 ;
+						background-image: -moz-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover4.jpg");
+						background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover4.jpg");
+						background-image: -ms-linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover4.jpg");
+						background-image: linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../../images/maincover4.jpg");
+						background-attachment: fixed;
+						background-repeat: no-repeat;
+						background-size: cover;
+						text-align: center;
+					}
+
+						#genericmain4 > header h2 {
+							font-size: 1.75em;
+							margin: 0 0 0.5em 0;
+							color: #fff;
+
+						}
+
+						#genericmain4 > header p {
+							color: inherit;
+							letter-spacing: 0.225em;
+							text-transform: uppercase;
+							top: 0;
+						}
+
+							#genericmain4 > header p a {
+								color: inherit;
+							}
+
+						@media screen and (max-width: 1680px) {
+
+							#genericmain4 > header {
+								padding: 10em 0 8em 0 ;
+							}
+
+						}
+
+						@media screen and (max-width: 1280px) {
+
+							#genericmain4 > header {
+								padding: 8em 3em 6em 3em ;
+							}
+
+						}
+
+						@media screen and (max-width: 980px) {
+
+							#genericmain4 > header {
+								padding: 10em 3em 8em 3em ;
+							}
+
+						}
+
+						@media screen and (max-width: 736px) {
+
+							#genericmain4 > header {
+								padding: 5em 3em 3em 3em ;
+							}
+
+								#genericmain4 > header h2 {
+									font-size: 1.25em;
+									margin: 0 0 1em 0;
+								}
+
+						}
+
+					body.is-mobile #genericmain4 > header {
+						background-attachment: scroll;
+					}
+
 
 /* Footer */
 
@@ -5158,15 +5356,33 @@ h1 {
 							opacity: .8;
 						}
 
+						img.profile{
+							opacity: 1;
+						}
+
 @media screen and (max-width: 1680px){
 
 	.row > .col-3{
-		width: 33.3%;
+		width: 25%;
 	}
 
 	.row > .col-6 {
-		width: 65.5%;
+		width: 50%;
 	}
+
+}
+
+@media screen and (max-width: 1336px){
+
+	.row > .col-3{
+		width: 25%;
+	}
+
+	.row > .col-6 {
+		width: 50%;
+	}
+
+
 
 }
 
